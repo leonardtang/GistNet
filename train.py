@@ -22,7 +22,7 @@ def train(add, num_testing, object_dim, job_name, **kwargs):
 
 	callbacks_list = [ModelCheckpoint('../model_weights/'+job_name+'.h5', monitor='val_loss', verbose=1, save_best_only=True, mode='min')]
 
-	print model.summary()
+	print(model.summary())
 
 	history = model.fit_generator(
 		training_generator, \
