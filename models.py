@@ -7,7 +7,7 @@ import numpy as np
 # from resnet50 import ResNet50
 
 from keras import backend as K
-K.image_data_format('th')
+K.image_data_format()'channels_first'
 
 
 def ObjectNet(object_dim):
