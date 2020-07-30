@@ -10,8 +10,8 @@ from keras.optimizers import Adam
 
 def train(add, num_testing, object_dim, job_name, **kwargs):
 
-	coco_train = COCO('.../annotations/instances_train2014.json')
-	coco_test = COCO('.../annotations/instances_val2014.json')
+	coco_train = COCO('~/../../media/data/Datasets/MSCOCO2014/annotations/instances_train2014.json')
+	coco_test = COCO('~/../../media/data/Datasets/MSCOCO2014/annotations/instances_val2014.json')
 
 	training_generator = create_generator(coco = coco_train, mode = 'training', add = add, object_dim = object_dim, **kwargs)
 	testing_generator = create_generator(coco = coco_test, mode = 'testing', add = add, object_dim = object_dim, **kwargs)
