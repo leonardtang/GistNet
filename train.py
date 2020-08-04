@@ -33,7 +33,7 @@ def train(add, num_testing, object_dim, job_name, **kwargs):
         steps_per_epoch=5000,
         epochs=500,
         callbacks=callbacks_list,
-        verbose=2,
+        verbose=1,
         max_queue_size=10,
         workers=1,
     )
