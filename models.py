@@ -70,6 +70,7 @@ def AddGist(objectnet, context_dim):
 	model = Model(inputs = [objectnet.input, context_input], outputs = output)
 	return model
 
+
 def build_model(add, object_dim, **kwargs):
 
 	if add == 'gist': return AddGist(ObjectNet(object_dim), kwargs['context_dim'])

@@ -38,7 +38,7 @@ def train(add, num_testing, object_dim, job_name, **kwargs):
 
 if __name__ == '__main__':
 
-	add = None
+	add = "gist"
 
 	num_testing = 1000
 
